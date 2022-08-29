@@ -1,0 +1,17 @@
+# Write your make_spoonerism function here:
+def make_spoonerism(word1, word2):
+  new_string = ""
+  first_word1 = word1[0]
+  first_word2 = word2[0]
+  other_words1 = word1[1:]
+  other_words2 = word2[1:]
+  new_string = first_word2+other_words1 + " " + first_word1 + other_words2
+  return new_string
+
+# Uncomment these function calls to test your function:
+print(make_spoonerism("Codecademy", "Learn"))
+# should print Lodecademy Cearn
+print(make_spoonerism("Hello", "world!"))
+# should print wello Horld!
+print(make_spoonerism("a", "b"))
+# should print b a
